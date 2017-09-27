@@ -1,0 +1,9 @@
+1. Get Slack Token for the bot by going here: https://my.slack.com/services/new/bot and registering the bot. Copy and save bot token somewhere.
+2. pip install slackclient
+3. Run script with parameters:
+python ./SlackbotTextMonitor.py -t xoxb-245074536278-Va1DIFJ94vD4I1TQUdigcmTQ -u 'bolabowale' -r '^ALARM:'
+-t <Slack Token>
+-u <user name to notify> - use several times for several users
+-r <regexp to monitor> - regular expression to search for in messages. Use several times to search for several expressions.
+4. Go to Slack and invite the bot to channel(s) you need. To do this, write message /invite <bot name> in each channel.
+5. Send test messages to the channel and the user specified in -u will recieve the notification.
